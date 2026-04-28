@@ -4,6 +4,7 @@
 - [1. Cartographie des flux de données](#1-cartographie-des-flux-de-données)
 - [2. Liste des données classifiées](#2-liste-des-données-classifiées)
 - [3. Acteurs du traitement](#3-acteurs-du-traitement)
+- [4. Analyse des risques & conformité RGPD](#4-analyse-des-risques--conformité-rgpd)
 
 # 1. Cartographie des flux de données
 
@@ -142,3 +143,39 @@ Le responsable de traitement (HealthPredict AI) doit :
 - Garantir la sécurité des données
 - Assurer la conformité RGPD
 - Limiter les accès aux seules personnes autorisées
+
+# 4. Analyse des risques & conformité RGPD
+
+## Risques principaux
+
+- Fuite de données de santé (très sensibles)  
+- Hébergement cloud hors UE  
+- Accès internes multiples  
+- Manque de transparence du modèle IA  
+
+---
+
+## Conformité RGPD (rapide)
+
+| Exigence | État |
+|---------|-----|
+| Données sensibles | Risque élevé |
+| Consentement explicite | Non précisé |
+| Sécurité des données | Partielle |
+| Hébergement UE | Non garanti |
+
+---
+
+## Recommandations
+
+- Chiffrement des données (repos + transit)  
+- Limitation des accès (principe du moindre privilège)  
+- Consentement explicite des utilisateurs  
+- Hébergement en UE ou garanties légales  
+- Amélioration de la transparence du modèle IA  
+
+---
+
+## Conclusion
+
+Le système présente un **risque RGPD élevé** et nécessite des mesures de sécurité et de conformité pour protéger les données de santé.
