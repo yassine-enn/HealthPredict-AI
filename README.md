@@ -1,4 +1,11 @@
-# HealthPredict-AI
+# HealthPredict AI – Analyse des données & RGPD
+
+## Sommaire
+- [1. Cartographie des flux de données](#-1-cartographie-des-flux-de-données)
+- [2. Liste des données classifiées](#-2-liste-des-données-classifiées)
+- [3. Acteurs du traitement](#-3-acteurs-du-traitement)
+
+# 1. Cartographie des flux de données
 
 ```mermaid
 flowchart LR
@@ -51,7 +58,7 @@ flowchart LR
     class LOG,DASH internal;
     class ML,DASH sensitive;
 ```
-# Liste des données classifiées – HealthPredict AI
+# 2. Liste des données classifiées
 
 ## Description
 
@@ -98,7 +105,7 @@ Ces données nécessitent :
 
 Les données de santé sont classées comme **données sensibles** selon le RGPD (article 9), ce qui implique des obligations légales strictes pour leur traitement et leur stockage.
 
-# Identification des acteurs du traitement – HealthPredict AI
+# 3. Acteurs du traitement
 
 ## Description
 
