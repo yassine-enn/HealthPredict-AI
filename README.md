@@ -2,7 +2,7 @@
 
 ## Sommaire
 - [1. Cartographie des flux de données](#-1-cartographie-des-flux-de-données)
-- [2. Liste des données classifiées](#-2-liste-des-données-classifiées)
+- [2. Liste des données classifiées](# 2. Liste des données classifiées)
 - [3. Acteurs du traitement](#-3-acteurs-du-traitement)
 
 # 1. Cartographie des flux de données
