@@ -51,3 +51,49 @@ flowchart LR
     class LOG,DASH internal;
     class ML,DASH sensitive;
 ```
+# Liste des données classifiées – HealthPredict AI
+
+## Description
+
+L’application HealthPredict AI collecte et traite plusieurs types de données afin de prédire des risques de maladies via un modèle d’intelligence artificielle.
+
+Ces données sont classées selon leur nature et leur niveau de sensibilité conformément aux principes du RGPD.
+
+---
+
+## Classification des données
+
+| Donnée | Exemple | Type de donnée | Catégorie RGPD | Niveau de sensibilité | Finalité |
+|-------|--------|---------------|----------------|----------------------|---------|
+| Nom | Dupont | Identité | Donnée personnelle | Moyenne | Identifier l’utilisateur |
+| Email | user@email.com | Contact | Donnée personnelle | Moyenne | Authentification / communication |
+| Âge | 35 ans | Profil | Donnée personnelle | Moyenne | Analyse du risque |
+| Symptômes | toux, fatigue | Santé | Donnée sensible | Très élevée | Analyse médicale par IA |
+| Historique médical | maladies passées | Santé | Donnée sensible | Très élevée | Amélioration de la précision du modèle |
+| Adresse IP | 192.168.x.x | Technique | Donnée personnelle | Moyenne | Sécurité / traçabilité |
+| Logs | connexions, erreurs | Technique | Donnée technique | Faible à moyenne | Monitoring / audit |
+| Navigation | pages visitées | Comportementale | Donnée personnelle | Moyenne | Amélioration UX |
+| Prédiction IA | score de risque | Donnée dérivée | Donnée sensible | Très élevée | Résultat fourni à l’utilisateur |
+
+---
+
+## Données critiques
+
+Les données suivantes sont considérées comme **hautement sensibles** :
+
+- Données de santé :
+  - symptômes
+  - historique médical
+- Données dérivées :
+  - prédictions du modèle IA
+
+Ces données nécessitent :
+- un **consentement explicite**
+- un **niveau de sécurité renforcé**
+- une **gestion stricte des accès**
+
+---
+
+## Remarque
+
+Les données de santé sont classées comme **données sensibles** selon le RGPD (article 9), ce qui implique des obligations légales strictes pour leur traitement et leur stockage.
