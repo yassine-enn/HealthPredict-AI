@@ -97,3 +97,41 @@ Ces données nécessitent :
 ## Remarque
 
 Les données de santé sont classées comme **données sensibles** selon le RGPD (article 9), ce qui implique des obligations légales strictes pour leur traitement et leur stockage.
+
+# Identification des acteurs du traitement – HealthPredict AI
+
+## Description
+
+Le traitement des données dans HealthPredict AI implique plusieurs acteurs ayant des rôles et responsabilités distincts, conformément au RGPD.
+
+---
+
+## Acteurs du traitement
+
+| Acteur | Type | Rôle | Responsabilités |
+|-------|------|------|----------------|
+| Utilisateur | Personne concernée | Fournit ses données | Remplit le questionnaire, reçoit les résultats |
+| HealthPredict AI | Responsable de traitement | Définit les finalités et moyens du traitement | Collecte, analyse et utilisation des données |
+| AWS (Amazon Web Services) | Sous-traitant | Hébergement des données | Stockage des données (S3), sécurité infrastructure |
+| Service de logs | Sous-traitant (potentiel) | Gestion des logs techniques | Stockage et traitement des données techniques |
+| Équipes internes | Personnel autorisé | Accès aux données via dashboard | Analyse, suivi, support utilisateur |
+| Modèle de Machine Learning | Outil de traitement | Analyse des données | Génère des prédictions de risque |
+
+---
+
+## Points de vigilance
+
+- Accès interne aux données sensibles (santé)
+- Hébergement via un fournisseur cloud potentiellement hors UE
+- Multiplication des acteurs impliqués dans le traitement
+
+---
+
+## Remarque
+
+Le responsable de traitement (HealthPredict AI) doit :
+
+- Encadrer contractuellement les sous-traitants
+- Garantir la sécurité des données
+- Assurer la conformité RGPD
+- Limiter les accès aux seules personnes autorisées
