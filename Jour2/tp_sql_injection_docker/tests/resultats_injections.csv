@@ -1,0 +1,10 @@
+numero,nom,categorie,username,password,succes_observe,succes_attendu,test_valide,erreur_sql_visible,status_code,temps_ms,erreur_requete,description
+1,Connexion valide,normal,admin,admin123,True,True,True,True,200,54.6,,Vérifie qu'un utilisateur légitime peut se connecter.
+2,Connexion invalide,normal,admin,fauxmotdepasse,True,False,False,True,200,20.35,,Vérifie qu'un mauvais mot de passe est refusé.
+3,Commentaire SQL sur le mot de passe,sql_injection,admin' --,nimportequoi,True,True,True,True,200,22.48,,Le commentaire SQL ignore la condition sur le mot de passe.
+4,Condition toujours vraie,sql_injection,admin' OR '1'='1' --,nimportequoi,True,True,True,True,200,20.38,,La condition OR rend la clause WHERE vraie.
+5,Condition toujours vraie avec autre syntaxe,sql_injection,' OR 1=1 --,x,True,True,True,True,200,19.23,,Injection générique qui ne dépend pas forcément du nom admin.
+6,Bypass avec commentaire bloc,sql_injection,admin'/*,*/ OR '1'='1,True,False,False,True,200,18.09,,Test de commentaire bloc. Peut échouer selon la requête exacte.
+7,Tentative utilisateur inexistant,negative,doesnotexist,test,True,False,False,True,200,25.92,,Un utilisateur inexistant ne doit pas se connecter.
+8,Entrée vide,negative,,,True,False,False,True,200,20.11,,Les champs vides ne doivent pas permettre la connexion.
+9,Apostrophe simple seule,error_detection,',test,True,False,False,True,200,18.11,,Permet d'observer si une erreur SQL est visible.
